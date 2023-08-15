@@ -1,0 +1,30 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap");
+* {
+  font-size: 16px;
+  font-family: "Ubuntu", sans-serif;
+}
+.big-flex .left {
+  background-image: url(../assets/images/bg-sidebar-desktop.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: calc(100vh - 16px);
+}
+.step .step-title{
+    color: hsl(231, 11%, 63%);
+}
+.step .step-description{
+    font-weight: bold;
+    color: white;
+}
+.active-number{
+    background-color: hsl(206, 94%, 87%);
+}
+form:required{
+  background-color: red;
+}
+.outline-add{
+  outline-color: hsl(354, 84%, 57%);
+  outline-width: 1px;
+
+}
