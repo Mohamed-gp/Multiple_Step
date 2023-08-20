@@ -1,0 +1,54 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap");
+* {
+  font-size: 16px;
+  font-family: "Ubuntu", sans-serif;
+}
+
+.big-flex .left {
+  background-image: url(../assets/images/bg-sidebar-desktop.svg);
+}
+
+.step .step-title {
+  color: hsl(231, 11%, 63%);
+}
+.step .step-description {
+  font-weight: bold;
+  color: white;
+}
+.active-number {
+  background-color: hsl(206, 94%, 87%);
+}
+.outline-add {
+  outline: 1px solid hsl(354, 84%, 57%);
+}
+@media (max-width: 768px) {
+  .big-flex .left {
+    background-position-y: -500px;
+  }
+}
+@media (min-width: 768px) {
+  .submit-container::before {
+    display: none;
+  }
+}
+.submit-container::before {
+  position: absolute;
+  content: "";
+  width: 940px;
+  height: 100%;
+  left: -700px;
+  background: white;
+  height: 148px;
+  bottom: 50%;
+  transform: translateY(50%);
+  z-index: 1;
+}
+/*
+background: white;
+    width: fir;
+    width: fit-content;
+    margin: 0 auto;
+    position: relative;
+    bottom: 78px;
+    border-radius: 20px;
+    */

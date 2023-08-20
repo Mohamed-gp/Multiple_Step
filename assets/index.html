@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Frontend Mentor | Multi-step form</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="CSS/one.css" />
+  </head>
+  <body>
+    <div class="big-flex overflow-hidden flex md:p-2 flex-col md:flex-row h-screen bg-Lightblue md:bg-white">
+      <div class="left flex flex-row justify-center bg-bottom h-80 md:h-full md:flex-col md:justify-start w-full md:w-1/3 py-8 pl-8 gap-y-4 bg-no-repeat bg-cover">
+        <div class="step-one flex gap-5 items-center">
+          <p
+            class="number active-number rounded-full w-10 h-10 flex justify-center items-center"
+          >
+            1
+          </p>
+          <div class="step">
+            <p class="step-title hidden md:block">Step 1</p>
+            <p class="step-description hidden md:block">Your info</p>
+          </div>
+        </div>
+        <div class="step-two flex gap-5 items-center">
+          <p
+            class="number rounded-full w-10 h-10 flex justify-center items-center text-white border"
+          >
+            2
+          </p>
+          <div class="step">
+            <p class="step-title hidden md:block">Step 2</p>
+            <p class="step-description hidden md:block">Select plan</p>
+          </div>
+        </div>
+        <div class="step-three flex gap-5 items-center">
+          <p
+            class="number text-white border rounded-full w-10 h-10 flex justify-center items-center"
+          >
+            3
+          </p>
+          <div class="step">
+            <p class="step-title hidden md:block">Step 3</p>
+            <p class="step-description hidden md:block">Add-ons</p>
+          </div>
+        </div>
+        <div class="step-four flex gap-5 items-center">
+          <p
+            class="number text-white border rounded-full w-10 h-10 flex justify-center items-center"
+          >
+            4
+          </p>
+          <div class="step">
+            <p class="step-title hidden md:block">Step 4</p>
+            <p class="step-description hidden md:block">Summary</p>
+          </div>
+        </div>
+      </div>
+      <div class="right relative bottom-28 bg-white w-fit mx-auto rounded-xl py-5 px-10  md:py-16 md:px-20 md:static md:w-3/4">
+        <p class="text-4xl font-bold text-Marineblue">Personal info</p>
+        <p class="text-Coolgray mt-2 mb-8">
+          Please provide your name, email address, and phone number.
+        </p>
+        <form action="" method="post" class="flex flex-col">
+          <div class="flex justify-between">
+            <label for="name" class="text-Purplishblue font-bold mb-2"
+              >Name</label
+            >
+            <p class="required text-Strawberryred font-bold hidden">
+              This Field Is Required
+            </p>
+          </div>
+          <input
+            type="text"
+            placeholder="e.g. Stephen King"
+            id="name"
+            class="mb-7 border py-3 pl-5 rounded-md focus:outline-Purplishblue"
+            required
+          />
+          <div class="flex justify-between">
+            <label for="email" class="text-Purplishblue font-bold mb-2"
+              >Email Address</label
+            >
+            <p class="required text-Strawberryred font-bold hidden">
+              This Field Is Required
+            </p>
+          </div>
+          <input
+            type="email"
+            id="email"
+            placeholder="e.g. stephenking@lorem.com"
+            class="mb-7 border py-3 pl-5 rounded-md focus:outline-Purplishblue"
+            required
+          />
+          <div class="flex justify-between">
+            <label for="phone" class="text-Purplishblue font-bold mb-2" required
+              >Phone Number</label
+            >
+            <p class="required text-Strawberryred font-bold hidden">
+              This Field Is Required
+            </p>
+          </div>
+          <input
+            type="tel"
+            id="phone"
+            placeholder="e.g. +1 234 567 890"
+            class="border py-3 pl-5 rounded-md focus:outline-Purplishblue"
+            required
+          />
+            <div class="submit-container absolute right-0 -bottom-32 md:static md:text-right md:mt-8">
+              <a href="https://facebook.com/" class="md:inline md:w-fit md:self-end py-4 px-6 mt-6 rounded-lg text-white bg-Marineblue cursor-pointer z-10 relative">Next Step</a>
+            </div>
+        </form>
+      </div>
+
+    </div>
+
+    <div class="hidden">
+      <!--  Sidebar start -->
+
+      <!-- Sidebar end -->
+
+      <!-- Step 1 start -->
+
+      <!-- Step 1 end -->
+
+      <!-- Step 2 start -->
+
+      Select your plan You have the option of monthly or yearly billing. Arcade
+      $9/mo Advanced $12/mo Pro $15/mo Monthly Yearly Go Back Next Step
+
+      <!-- Step 2 end -->
+
+      <!-- Step 3 start -->
+
+      Pick add-ons Add-ons help enhance your gaming experience. Online service
+      Access to multiplayer games +$1/mo Larger storage Extra 1TB of cloud save
+      +$2/mo Customizable Profile Custom theme on your profile +$2/mo Go Back
+      Next Step
+
+      <!-- Step 3 end -->
+
+      <!-- Step 4 start -->
+
+      Finishing up Double-check everything looks OK before confirming.
+
+      <!-- Dynamically add subscription and add-on selections here -->
+
+      Total (per month/year) Go Back Confirm
+
+      <!-- Step 4 end -->
+
+      <!-- Step 5 start -->
+
+      Thank you! Thanks for confirming your subscription! We hope you have fun
+      using our platform. If you ever need support, please feel free to email us
+      at support@loremgaming.com.
+
+      <!-- Step 5 end -->
+    </div>
+    <script src="JS/one.js"></script>
+    <script src="JS/tailwind-config.js"></script>
+  </body>
+</html>
