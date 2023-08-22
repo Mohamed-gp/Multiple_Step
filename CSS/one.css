@@ -3,28 +3,64 @@
   font-size: 16px;
   font-family: "Ubuntu", sans-serif;
 }
+
 .big-flex .left {
   background-image: url(../assets/images/bg-sidebar-desktop.svg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  height: calc(100vh - 16px);
 }
-.step .step-title{
-    color: hsl(231, 11%, 63%);
-}
-.step .step-description{
-    font-weight: bold;
-    color: white;
-}
-.active-number{
-    background-color: hsl(206, 94%, 87%);
-}
-form:required{
-  background-color: red;
-}
-.outline-add{
-  outline-color: hsl(354, 84%, 57%);
-  outline-width: 1px;
 
+.step .step-title {
+  color: hsl(231, 11%, 63%);
+}
+.step .step-description {
+  font-weight: bold;
+  color: white;
+}
+.active-number {
+  background-color: hsl(206, 94%, 87%);
+}
+.outline-add {
+  outline: 1px solid hsl(354, 84%, 57%);
+}
+@media (max-width: 768px) {
+  .big-flex .left {
+    background-position-y: -500px;
+  }
+}
+@media (min-width: 768px) {
+  .submit-container::before {
+    display: none;
+  }
+}
+.submit-container::before {
+  position: absolute;
+  content: "";
+  width: 940px;
+  height: 100%;
+  left: -700px;
+  background: white;
+  height: 148px;
+  bottom: 50%;
+  transform: translateY(50%);
+  z-index: 1;
+}
+/* start step two  */
+.plans div {
+  padding: 15px 50px 15px 15px;
+  border-radius: 8px;
+  cursor: pointer;
+  width: 30%;
+  border: 2px solid hsl(229, 24%, 87%);
+}
+.plans .active-plan{
+  border-color: hsl(243, 100%, 62%);
+}
+.plans div :nth-child(1){
+  margin-bottom: 35px;
+} 
+.plans div :nth-child(2){
+  font-weight:bold;
+  color: hsl(213, 96%, 18%);
+}
+.plans div :nth-child(3){
+  color:hsl(231, 11%, 63%);
 }

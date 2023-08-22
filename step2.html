@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Frontend Mentor | Multi-step form</title>
+    <title>Frontend Mentor | step 2</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="CSS/one.css" />
   </head>
@@ -54,63 +54,33 @@
             <p class="step-description hidden md:block">Summary</p>
           </div>
         </div>
-      </div>
-      <div class="right relative bottom-28 bg-white w-fit mx-auto rounded-xl py-5 px-10  md:py-16 md:px-20 md:static md:w-3/4">
-        <p class="text-4xl font-bold text-Marineblue">Personal info</p>
-        <p class="text-Coolgray mt-2 mb-8">
-          Please provide your name, email address, and phone number.
-        </p>
-        <form action="" method="post" class="flex flex-col">
-          <div class="flex justify-between">
-            <label for="name" class="text-Purplishblue font-bold mb-2"
-              >Name</label
-            >
-            <p class="required text-Strawberryred font-bold hidden">
-              This Field Is Required
+        </div>
+        <div class="right relative bottom-28 bg-white w-fit mx-auto rounded-xl py-5 px-10  md:py-16 md:px-20 md:static md:w-3/4">
+            <p class="text-4xl font-bold text-Marineblue">Select your plan</p>
+            <p class="text-Coolgray mt-2 mb-8">
+                You have the option of monthly or yearly billing.
             </p>
-          </div>
-          <input
-            type="text"
-            placeholder="e.g. Stephen King"
-            id="name"
-            class="mb-7 border py-3 pl-5 rounded-md focus:outline-Purplishblue"
-            required
-          />
-          <div class="flex justify-between">
-            <label for="email" class="text-Purplishblue font-bold mb-2"
-              >Email Address</label
-            >
-            <p class="required text-Strawberryred font-bold hidden">
-              This Field Is Required
-            </p>
-          </div>
-          <input
-            type="email"
-            id="email"
-            placeholder="e.g. stephenking@lorem.com"
-            class="mb-7 border py-3 pl-5 rounded-md focus:outline-Purplishblue"
-            required
-          />
-          <div class="flex justify-between">
-            <label for="phone" class="text-Purplishblue font-bold mb-2" required
-              >Phone Number</label
-            >
-            <p class="required text-Strawberryred font-bold hidden">
-              This Field Is Required
-            </p>
-          </div>
-          <input
-            type="tel"
-            id="phone"
-            placeholder="e.g. +1 234 567 890"
-            class="border py-3 pl-5 rounded-md focus:outline-Purplishblue"
-            required
-          />
-            <div class="submit-container absolute right-0 -bottom-32 md:static md:text-right md:mt-8">
-              <a href="https://facebook.com/" class="md:inline md:w-fit md:self-end py-4 px-6 mt-6 rounded-lg text-white bg-Marineblue cursor-pointer z-10 relative">Next Step</a>
+            <div class="plans my-5 flex justify-between">
+                <div class="arcade">
+                    <img src="assets/images/icon-arcade.svg" alt="arcade" class="arcade-img">
+                    <p class="title">Arcade</p>
+                    <p class="price">$9/mo</p>
+                </div>
+                <div class="advanced">
+                    <img src="assets/images/icon-advanced.svg" alt="advanced" class="advanced-img">
+                    <p class="title">Advanced</p>
+                    <p class="price">$12/mo</p>
+                </div>
+                <div class="pro">
+                    <img src="assets/images/icon-pro.svg" alt="" class="advanced-img">
+                    <p class="title">Pro</p>
+                    <p class="price">$15/mo</p>
+                </div>
             </div>
-        </form>
-      </div>
+            <div class="submit-container absolute right-0 -bottom-32 md:static md:text-right md:mt-8">
+                <a href="https://facebook.com/" class="submit md:inline md:w-fit md:self-end py-4 px-6 mt-6 rounded-lg text-white bg-Marineblue cursor-pointer z-10 relative">Next Step</a>
+            </div>
+        </div>
 
     </div>
 
@@ -125,7 +95,7 @@
 
       <!-- Step 2 start -->
 
-      Select your plan You have the option of monthly or yearly billing. Arcade
+        Arcade
       $9/mo Advanced $12/mo Pro $15/mo Monthly Yearly Go Back Next Step
 
       <!-- Step 2 end -->
