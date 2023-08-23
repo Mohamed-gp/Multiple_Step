@@ -44,23 +44,20 @@
   z-index: 1;
 }
 /* start step two  */
-.plans div {
+.plans > div {
   padding: 15px 50px 15px 15px;
   border-radius: 8px;
   cursor: pointer;
-  width: 30%;
   border: 2px solid hsl(229, 24%, 87%);
 }
 .plans .active-plan{
   border-color: hsl(243, 100%, 62%);
 }
-.plans div :nth-child(1){
-  margin-bottom: 35px;
-} 
-.plans div :nth-child(2){
+
+.plans div div:nth-child(2) :first-child{
   font-weight:bold;
   color: hsl(213, 96%, 18%);
 }
-.plans div :nth-child(3){
+.plans div div:nth-child(2) :nth-child(2){
   color:hsl(231, 11%, 63%);
 }
