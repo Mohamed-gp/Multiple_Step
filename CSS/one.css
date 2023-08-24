@@ -58,6 +58,7 @@
   font-weight:bold;
   color: hsl(213, 96%, 18%);
 }
-.plans div div:nth-child(2) :nth-child(2){
+.plans div div:nth-child(2) :nth-child(2),.plans div div:nth-child(2) :nth-child(3){
   color:hsl(231, 11%, 63%);
 }
+

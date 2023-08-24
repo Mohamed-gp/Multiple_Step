@@ -15,6 +15,10 @@ if (document.title == "Frontend Mentor | step 2" ) {
   let bonus = document.querySelectorAll(".bonus")
   let monthly = document.querySelector(".monthly")
   let yearly = document.querySelector(".yearly")
+  let priceYearly = document.querySelectorAll(".price")
+  priceYearly.forEach(function(e){
+    console.log(e.innerHTML.slice(-3))
+  })
   yearly.onclick = function(){
     centerChild.classList.remove("left-1")
     centerChild.classList.add("right-1")

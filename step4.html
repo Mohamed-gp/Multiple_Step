@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Frontend Mentor | step 2</title>
+    <title>Frontend Mentor | step 3</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="CSS/one.css" />
   </head>
@@ -23,7 +23,7 @@
         </div>
         <div class="step-two flex gap-5 items-center">
           <p
-            class="number active-number rounded-full w-10 h-10 flex justify-center items-center text-white border"
+            class="number  rounded-full w-10 h-10 flex justify-center items-center text-white border"
           >
             2
           </p>
@@ -34,7 +34,7 @@
         </div>
         <div class="step-three flex gap-5 items-center">
           <p
-            class="number text-white border rounded-full w-10 h-10 flex justify-center items-center"
+            class="number active-number text-white border rounded-full w-10 h-10 flex justify-center items-center"
           >
             3
           </p>
@@ -56,56 +56,42 @@
         </div>
         </div>
         <div class="right relative bottom-7 bg-white w-11/12 mx-auto rounded-xl py-5 px-10  md:py-16 md:px-20 md:static md:w-3/4">
-            <p class="text-4xl font-bold text-Marineblue">Select your plan</p>
+            <p class="text-4xl font-bold text-Marineblue">Pick add-ons</p>
             <p class="text-Coolgray mt-2 mb-8">
-                You have the option of monthly or yearly billing.
+              Add-ons help enhance your gaming experience.
             </p>
-            <div class="plans my-5 flex flex-col md:flex-row md:justify-between gap-4">
-                <div class="arcade w-full md:w-1/3 flex gap-2 items-center md:block">
-                  <div class="one">
-                    <img src="assets/images/icon-arcade.svg" alt="arcade" class="arcade-img md:mb-9">
-                  </div>
-                  <div class="two">
-                    <p class="title">Arcade</p>
-                    <p class="price">$9/mo</p>
-                    <p class="bonus text-Purplishblue hidden">2 months free</p>
-                  </div>
+            <div class="cards flex flex-col gap-5 mb-5">
+              <div class="card-one flex items-center gap-3 border-2 border-Purplishblue p-5 rounded-lg">
+                <input type="checkbox" name="" id="" class="one scale-150 checked:accent-Purplishblue">
+                <div class="two w-full pl-3">
+                  <p class="text-Marineblue font-bold ">Online service</p>
+                  <p class="text-Coolgray">Access to multiplayer games</p>
                 </div>
-                <div class="advanced w-full md:w-1/3 flex gap-2 items-center md:block">
-                  <div class="one">
-                    <img src="assets/images/icon-advanced.svg" alt="advanced" class="advanced-img md:mb-9">
-                  </div>
-                  <div class="two">
-                    <p class="title">Advanced</p>
-                    <p class="price">$12/mo</p>
-                    <p class="bonus text-Purplishblue hidden">2 months free</p>
-                  </div>
-                </div>
-                <div class="pro w-full md:w-1/3 flex gap-2 items-center md:block">
-                  <div class="one">
-                    <img src="assets/images/icon-pro.svg" alt="" class="advanced-img md:mb-9">
-                  </div>
-                  <div class="two">
-                    <p class="title">Pro</p>
-                    <p class="price">$15/mo</p>
-                    <p class="bonus text-Purplishblue hidden">2 months free</p>
-                  </div>
-                </div>
-            </div>
-            <div class="monthly-yearly flex justify-center gap-3 items-center my-8 bg-Alabaster p-3 rounded-lg">
-              <p class="monthly cursor-pointer text-Marineblue font-bold text-Coolgray">Monthly</p>
-              <div class="parent-toggle relative w-20 h-8 bg-Marineblue rounded-xl cursor-pointer">
-                <div class="child-circle absolute bottom-2/4 translate-y-1/2 left-1 w-5 h-5 rounded-full bg-white"></div>
+                <p class="three text-Purplishblue">+$1/mo</p>
               </div>
-              <p class="yearly cursor-pointer text-Coolgray">Yearly</p>
+              <div class="card-two flex items-center gap-3 border-2 border-Purplishblue p-5 rounded-lg">
+                <input type="checkbox" name="" id="" class="one scale-150 checked:accent-Purplishblue">
+                <div class="two w-full pl-3">
+                  <p class="text-Marineblue font-bold">Larger storage</p>
+                  <p class="text-Coolgray">Extra 1TB of cloud save</p>
+                </div>
+                <p class="three text-Purplishblue">+$2/mo</p>
+              </div>
+              <div class="card-three flex items-center gap-3 border-2 border-Purplishblue p-5 rounded-lg">
+                <input type="checkbox" name="" id="" class="one scale-150 checked:accent-Purplishblue">
+                <div class="two w-full pl-3">
+                  <p class="text-Marineblue font-bold">Customizable Profile</p>
+                  <p class="text-Coolgray">Custom theme on your profile</p>
+                </div>
+                <p class="three text-Purplishblue">+$2/mo</p>
+              </div>
             </div>
             <div class="flex justify-between">
-
               <div class="submit-container absolute left-0 -bottom-32 md:static md:text-left md:mt-8">
-                <a href="index.html" class="submit md:inline md:w-fit py-4 px-6 mt-6 rounded-lg text- cursor-pointer z-10 relative text-Coolgray font-bold">Go Back</a>
+                <a href="https://google.com" class="submit md:inline md:w-fit py-4 px-6 mt-6 rounded-lg text- cursor-pointer z-10 relative text-Coolgray font-bold">Go Back</a>
               </div>
               <div class="submit-container absolute right-0 -bottom-32 md:static md:text-right md:mt-8">
-                <a href="step3.html" class="submit md:inline md:w-fit py-4 px-6 mt-6 rounded-lg text-white bg-Marineblue cursor-pointer z-10 relative">Next Step</a>
+                <a href="https://facebook.com/" class="submit md:inline md:w-fit py-4 px-6 mt-6 rounded-lg text-white bg-Marineblue cursor-pointer z-10 relative">Next Step</a>
               </div>
             </div>
         </div>
@@ -130,7 +116,7 @@
 
       <!-- Step 3 start -->
 
-      Pick add-ons Add-ons help enhance your gaming experience. Online service
+        Online service
       Access to multiplayer games +$1/mo Larger storage Extra 1TB of cloud save
       +$2/mo Customizable Profile Custom theme on your profile +$2/mo Go Back
       Next Step
