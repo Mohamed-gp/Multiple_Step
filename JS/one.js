@@ -93,6 +93,18 @@ submit[1].onclick = function (e) {
 
 if (document.title == "Frontend Mentor | step 3") {
   let checkBox = document.querySelectorAll(".cards > div > :first-child");
+  let prizes = document.querySelectorAll(".cards > div .three")
+  if (localStorage.planType == "Yearly") {
+    prizes.forEach(function(e){
+      e.innerHTML = e.innerHTML.slice(0,-2) + "yr"
+    })
+  }
+  else{
+    prizes.forEach(function(e){
+      e.innerHTML = e.innerHTML.slice(0,-2) + "mo"
+    })
+
+  }
   submit[1].onclick = function (e) {
     checkBox.forEach(function(e2,index){
       if (e2.checked == 1) {
@@ -110,11 +122,24 @@ if (document.title == "Frontend Mentor | step 4") {
   let finalPlan = document.querySelector(".final-results .final-plan .one .one")
   finalPlan.innerHTML = `${localStorage.plan}(${localStorage.planType})`
   let fixPrice = document.querySelector(".final-results .final-plan > .two")
-  fixPrice.innerHTML = `$${localStorage.fixPrice}/mo`
 
   let first = document.querySelector(".first")
   let second = document.querySelector(".second")
   let third = document.querySelector(".third")
+  
+  if (localStorage.planType == "Yearly") {
+    fixPrice.innerHTML = `$${localStorage.fixPrice}/yr`
+    first.children[1].innerHTML = first.children[1].innerHTML.slice(0,-2) + "yr"
+    second.children[1].innerHTML = second.children[1].innerHTML.slice(0,-2) + "yr"
+    third.children[1].innerHTML = third.children[1].innerHTML.slice(0,-2) + "yr"
+    
+  }
+  else{
+    fixPrice.innerHTML = `$${localStorage.fixPrice}/mo`
+    first.children[1].innerHTML = first.children[1].innerHTML.slice(0,-2) + "mo"
+    second.children[1].innerHTML = second.children[1].innerHTML.slice(0,-2) + "mo"
+    third.children[1].innerHTML = third.children[1].innerHTML.slice(0,-2) + "mo"
+  }
 
 
   if (localStorage["Online service"] == "undefined") {
@@ -135,7 +160,27 @@ if (document.title == "Frontend Mentor | step 4") {
   else{
     third.classList.remove("hidden")
   }
+  let resultTitle = document.querySelector(".result .title")
+  let total = document.querySelector(".result .total")
+  resultTitle.innerHTML = `${resultTitle.innerHTML} (per ${localStorage.planType.slice(0,-2)})`
+  if (localStorage["Online service"] == "undefined") {
+    localStorage["Online service"] = 0
+  }
+  if (localStorage["Larger storage"] == "undefined") {
+    localStorage["Larger storage"] = 0
+  }
+  if (localStorage["Customizable Profile"] == "undefined") {
+    localStorage["Customizable Profile"] = 0
+  }
+  if (localStorage.planType == "Yearly") {
+    total.innerHTML = `+$${Number(localStorage.fixPrice) + Number(localStorage["Online service"]) + Number(localStorage["Larger storage"]) + Number(localStorage["Customizable Profile"])}/yr`
+  }
+  else{
+    total.innerHTML = `+$${Number(localStorage.fixPrice) + Number(localStorage["Online service"]) + Number(localStorage["Larger storage"]) + Number(localStorage["Customizable Profile"])}/mo`
+
+  }
 }
 // end  finishing up
+
 
 
